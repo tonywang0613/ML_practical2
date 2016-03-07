@@ -1,0 +1,295 @@
+D<?xml version="1.0" encoding="utf-8"?>
+<!--====only keep the file name============-->
+
+<elements2mist>
+	<!--===========   DLL Handling ============-->
+	<DLLhandling mist="02">
+		<m mist="01">
+			<filename type="type_string" num="1854"/>
+		</load_dll>
+		
+	</DLLhandling>
+	
+	<!--========= Muttx======================-->
+	<Mutex mist="03">
+		<create_mutex mist="01">
+		</create_mutex>
+		<open_mutex mist="02">
+		</open_mutex>
+	</Mutex>
+	
+	
+	<!--=======registry=====================-->
+	<registry mist="01">
+		<open_key mist="01">
+		</open_key>
+		<query_value mist="02">
+		</query_value>
+		<enum_keys mist="03">
+		</enum_keys>
+		<set_value mist="04">
+		</set_value>
+		<read_value mist="05">
+			<file type="type_string"/>
+		</read_value>
+		<write_value mist="06">
+			<file type="type_string"/>
+		</write_value>
+		<enum_items mist="07">
+		</enum_items>
+		<enum_modules mist="08">
+		</enum_modules>
+		<delete_value mist="09">
+		</delete_value>
+		<enum_types mist="0a">
+		</enum_types>
+		<enum_share mist="0b">
+		</enum_share>
+		<delete_share mist="0c">
+		</delete_share>
+		<enum_handles mist="0d">
+		</enum_handles>
+		<create_key mist="0e">
+		</create_key>
+		<enum_subtypes mist="0f">
+		</enum_subtypes>
+		<delete_key mist="0g">
+		</delete_key>
+	</registry>
+	
+	<!--=======windows========================-->
+	<windows mist="04">
+		<find_window mist="01">
+		</find_window>
+		<create_window mist="02">
+		</create_window>
+		<show_window mist="03">
+		</show_window>
+		<enum_window mist="04">
+		</enum_window>
+		<destroy_window mist="05">
+		</destroy_window>
+		
+		<exit_window mist="07">
+		</exit_window>
+		
+		<load_image mist="08">
+		</load_image>
+		<create_interface mist="09">
+		</create_interface>
+	</windows>
+	
+	<!--=======Files========================-->
+	<filesystem mist="05">
+		<open_file mist="01">
+			<srcfile type="type_string"/>
+		</open_file>
+		<create_file mist="02">
+			<srcfile type="type_string"/>
+		</create_file>
+		<copy_file mist="03">
+			<srcfile type="type_string"/>
+		</copy_file>
+		<find_file mist="04">
+			<srcfile type="type_string"/>
+		</find_file>
+		<delete_file mist="05">
+			<srcfile type="type_string"/> 
+		</delete_file>
+		<get_file_attributes mist="06">
+			<srcfile type="type_string"/>
+		</get_file_attributes>
+		<set_file_attributes mist="06">
+			<srcfile type="type_string"/>
+		</set_file_attributes>
+		<create_directory mist="07">
+			<srcfile type="type_string"/>
+		</create_directory>
+		<remove_directory mist="08">
+			<srcfile type="type_string"/>
+		</remove_directory>
+		<create_open_file mist="09">
+		</create_open_file>
+		<set_file_time mist="0a">
+		</set_file_time>
+	
+		
+				
+	</filesystem>
+	
+	<!--==========thread==========-->
+	<thread mist="06">
+		<sleep mist="01">
+		</sleep>
+		<create_thread mist="02">
+		</create_thread>
+		<set_thread_context mist="03">
+		</set_thread_context>
+		<create_thread_remote mist="04">
+		</create_thread_remote>
+	</thread>
+	
+	
+	<!--========socket===============-->
+	<socket mist="07">
+		<recv_socket mist="01">
+		</recv_socket>
+		<bind_socket mist="02">
+		</bind_socket>
+		<create_socket mist="03">
+		</create_socket>
+		<send_socket mist="04">
+		</send_socket>
+		<listen_socket mist="05">
+		</listen_socket>
+		<connect_socket mist="06">
+		</connect_socket>
+		<accept_socket mist="07">
+		</accept_socket>
+		<message mist="08">
+		</message>
+	</socket>
+	
+	
+	<!--=========network==============-->
+	<network mist="08">
+		<open_url mist="01">
+		</open_url>
+		
+		<get_host_by_addr mist="02">
+		</get_host_by_addr>
+
+		<create_mail_slot mist="03">
+		</create_mail_slot>
+
+		<connect mist="04">
+		</connect>
+		<add_netjob mist="05">
+		</add_netjob>
+		<get_host_by_name mist="06">
+		</get_host_by_name>
+	</network>
+	
+	<!--=========vm=====================-->
+	<vm mist="09">
+		<vm_write mist="01">
+		</vm_write>
+		<vm_protect mist="02">
+		</vm_protect>
+		<vm_allocate mist="03">
+		</vm_allocate>	
+		<vm_mapviewofsection mist="04">
+		</vm_mapviewofsection>	
+		<vm_read mist="05">
+		</vm_read>
+	</vm>
+	
+	<!--=========process===========-->
+	<process mist="0a">
+		<enum_processes mist="01">
+		</enum_processes>
+		<Kill_process mist="02">
+		</Kill_process>
+		<create_process mist="03">
+		</create_process>
+		<open_process mist="04">
+		</open_process>
+		<create_process_nt mist="05">
+		</create_process_nt>
+	</process>
+	
+	<!--========window service========-->
+	<windowservice mist="0b">
+		<open_scmanager mist="01">
+		</open_scmanager>
+		
+		<change_service_config mist="04">
+		</change_service_config>
+		<open_service mist="05">
+		</open_service>
+		
+		<create_service mist="07">
+		</create_service>
+		<start_service mist="08">
+		</start_service>
+		<enum_services mist="09">
+		</enum_services>
+		<delete_service mist="0a">
+		</delete_service>
+		<control_service mist="0e">
+		</control_service>
+
+			
+	</windowservice>
+	
+	<!--========user================-->
+	<user mist="0c">
+		<enum_user mist="01">
+		</enum_user>
+		<get_userinfo mist="02">
+		</get_userinfo>
+		<get_username mist="03">
+		</get_username>
+		<create_process_as_user mist="04">
+		</create_process_as_user>
+		<logon_as_user mist="05">
+		</logon_as_user>
+	</user>
+	
+	<!--=======section============-->
+	<section mist="0d">
+		<read_section_names mist="01">
+		</read_section_names>
+		<read_section mist="02">
+		</read_section>
+	</section>
+	
+	<!--=======system========-->
+	<system mist="0e">
+		<get_system_time mist="01">
+		</get_system_time>
+		<set_system_time mist="02">
+		</set_system_time>
+		
+		<create_namedpipe mist="03">
+		</create_namedpipe>	
+		<load_driver mist="04">
+		</load_driver>
+		<unload_driver mist="05">
+		</unload_driver>
+		<get_windows_directory mist="06">
+		</get_windows_directory>
+		<get_computer_name mist="07">
+		</get_computer_name>
+		
+	</system>
+	
+	<!--======internethelper======-->
+	<internethelper mist="0f">
+		<check_for_debugger mist="01">
+		</check_for_debugger>
+		<download_file_to_cache mist="02">
+		</download_file_to_cache>
+	</internethelper>
+	
+	<!--=======windowshook=========-->
+	<windowshook mist="0g">
+		<set_windows_hook mist="01">
+		</set_windows_hook>
+	</windowshook>
+	
+	<!---========windowscom================-->
+	<windowscom mist="0h">
+		<com_createole_object mist="01">
+		</com_createole_object>
+		<com_get_class_object mist="02">
+		</com_get_class_object>
+		<com_create_instance mist="03">
+		</com_create_instance>
+		<impersonate_user mist="04">
+		</impersonate_user>
+		<revert_to_self mist="05">
+		</revert_to_self>
+	</windowscom>
+	
+</elements2mist>
